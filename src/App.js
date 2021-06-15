@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Day from './components/Day/Day';
+import DayOverviewRow from './components/DayOverviewRow/DayOverviewRow';
+import HumidityIcon from './components/HumidityIcon/HumidityIcon';
+import TempMinMax from './components/TempMinMax/TempMinMax';
+import WeatherStateIcon from './components/WeatherStateIcon/WeatherStateIcon';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <HumidityIcon humidity={55} />
+      <WeatherStateIcon weather_state_abbr={'sn'} />
+      <Day date={"2021-06-18"}/>
+      <TempMinMax min={15} max={32} /> */}
+      <DayOverviewRow
+        date="2021-06-15"
+        humidity={82}
+        weather_state_abbr='sn'
+        min={12}
+        max={28}
+      />
     </div>
   );
 }

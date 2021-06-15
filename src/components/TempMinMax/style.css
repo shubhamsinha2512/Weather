@@ -1,0 +1,21 @@
+.tempMinMax{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 25%;
+    max-width: 250px;
+}
+
+.min, .max{
+    display: flex;
+    align-items: center;
+    color:#444;
+}
+
+.min{
+    float: left;
+}
+
+.max{
+    float: right;
+}
