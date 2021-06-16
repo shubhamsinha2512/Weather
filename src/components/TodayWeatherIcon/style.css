@@ -1,0 +1,29 @@
+.todayWeatherIcon{
+    display: inline-flex;
+    align-items: center;
+    color: #FFF;
+}
+
+.weatherIcon{
+    width: 48px;
+}
+
+.dayDate{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-left: 8px;
+}
+
+h2{
+    margin: 0;
+}
+
+.todday{
+    font-size: 14px;
+    font-weight: lighter;
+    color: inherit;
+
+}
+

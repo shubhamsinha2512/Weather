@@ -1,0 +1,40 @@
+.tempLocToday{
+    display: inline-flex;
+    flex-direction: column;
+    color: #FFF;
+}
+
+.temp{
+    color: inherit;
+    font-size: 76px;
+    font-weight:300;
+    margin: 0;
+}
+
+.location{
+    color: inherit;
+    font-size: 22px;
+    font-weight: lighter;
+    margin-bottom: 8px;
+}
+
+.riseSet{
+    display: flex;
+    justify-content: center;
+    color: inherit;
+    font-size: 14px;
+    font-weight: lighter;
+    letter-spacing: 0.5px;
+}
+
+.sunRise{
+    display: flex;
+    align-items: stretch;
+    color: inherit;
+}
+
+.sunSet{
+    display: flex;
+    align-items: stretch;
+    color: inherit;
+}

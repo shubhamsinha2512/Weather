@@ -2,14 +2,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 25%;
+    min-width: 30%;
     max-width: 250px;
 }
 
 .min, .max{
     display: flex;
     align-items: center;
-    color:#444;
+    color:#888;
 }
 
 .min{
