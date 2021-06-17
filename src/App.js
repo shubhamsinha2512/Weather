@@ -6,18 +6,24 @@ import HumidityNowIcon from './components/HumidityNowIcon/HumidityNowIcon';
 import HumidityIcon from './components/HumidityRowIcon/HumidityRowIcon';
 import TempLocToday from './components/TempLocToday/TempLocToday';
 import TempMinMax from './components/TempMinMax/TempMinMax';
+import TodayDetails from './components/TodayDetails/TodayDetails';
 import TodayWeatherIcon from './components/TodayWeatherIcon/TodayWeatherIcon';
 import WeatherStateIcon from './components/WeatherStateIcon/WeatherStateIcon';
 import WindSpeedIcon from './components/WindSpeedIcon/WindSpeedIcon';
+import Home from './Screens/Home/Home';
 
 function App() {
   return (
     <div className="App">
+      <Home />
+
+
+
       {/* <HumidityRowIcon humidity={55} />
       <WeatherStateIcon weather_state_abbr={'sn'} />
       <Day date={"2021-06-18"}/>
       <TempMinMax min={15} max={32} /> */}
-      <DayOverviewRow
+      {/* <DayOverviewRow
         date="2021-06-15"
         humidity={82}
         weather_state_abbr='sn'
@@ -35,7 +41,9 @@ function App() {
         country='United Kingdom' 
         sunrise="2021-06-15T04:42:44.508559+01:00" 
         sunset="2021-06-15T21:19:35.668898+01:00"
-        />
+        /> */}
+
+        {/* <TodayDetails /> */}
     </div>
   );
 }

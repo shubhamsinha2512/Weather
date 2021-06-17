@@ -16,10 +16,10 @@ function TodayWeatherIcon({weather_state_abbr, date}) {
             case 4: day = "Thu"; break;
             case 5: day = "Fri"; break;
             case 6: day = "Sat"; break;
-            default: day = "Invalid Date";
+            default: day = "Day";
         }
 
-        const t_date = TodayDateISO.getDate();
+        const t_date = date ? TodayDateISO.getDate() : "date";
         let month = "";
 
         switch(TodayDateISO.getMonth()){
@@ -35,7 +35,7 @@ function TodayWeatherIcon({weather_state_abbr, date}) {
             case 9: month = 'Oct';break;
             case 10: month = 'Nov';break;
             case 11: month = 'Dec';break;
-            default: month = 'Invalid Month!';break;
+            default: month = 'Month';break;
         }
 
         // console.log(day, t_date, month);
@@ -44,7 +44,7 @@ function TodayWeatherIcon({weather_state_abbr, date}) {
 
     return (
         <div className='todayWeatherIcon'>
-            <img className='weatherIcon' src={`https://www.metaweather.com/static/img/weather/${weather_state_abbr}.svg`} />
+            <img className='weatherIcon' src={`https://www.metaweather.com/static/img/weather/${weather_state_abbr ? weather_state_abbr : "s"}.svg`} />
             <div className='dayDate'>
                 <h2>Today</h2>
                 <span className='today'>{getDayDate(date)}</span>

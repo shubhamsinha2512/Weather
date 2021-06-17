@@ -1,0 +1,25 @@
+.fiveDayDetails{
+    display: flex;
+    flex-direction: column;
+    background-color: #c3e3ff;
+    padding: 20px;
+    width: 45vw;
+    height: auto;
+    max-height: 100vh;
+    padding: 15px 30px;
+
+}
+
+.header{
+    color:#222;
+    text-align: left;
+}
+
+.overviewRows{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-around;
+}
+

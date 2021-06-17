@@ -2,6 +2,7 @@
     display: inline-flex;
     flex-direction: column;
     color: #FFF;
+    text-align: center;
 }
 
 .temp{
